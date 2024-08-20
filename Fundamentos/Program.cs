@@ -83,72 +83,72 @@ internal class Program
 
 
         // Instanciar um Objeto do Tipo Produto
-        Produto p1 = new Produto();
-        p1.Codigo = 123456;
-        p1.Nome = "Coca-Cola";
-        p1.Preco = 12.99;
-        p1.Estoque = 96;
-        // Chamar o metodo QuantidadeEstoque
-        p1.QuantidadeEstoque();
-        p1.Estoque = 85;
-        // Chamar o metodo QuantidadeEstoque
-        p1.QuantidadeEstoque();
-        Console.WriteLine("===================================================");
-        Console.WriteLine();
+        //Produto p1 = new Produto();
+        //p1.Codigo = 123456;
+        //p1.Nome = "Coca-Cola";
+        //p1.Preco = 12.99;
+        //p1.Estoque = 96;
+        //// Chamar o metodo QuantidadeEstoque
+        //p1.QuantidadeEstoque();
+        //p1.Estoque = 85;
+        //// Chamar o metodo QuantidadeEstoque
+        //p1.QuantidadeEstoque();
+        //Console.WriteLine("===================================================");
+        //Console.WriteLine();
 
 
-        // Instanciar um objeto do tipo Carro
-        Carro carro1 = new Carro();
-        carro1.Marca = "Ferrari";
-        carro1.Modelo = "488";
-        carro1.Velocidade = 80;
+        //// Instanciar um objeto do tipo Carro
+        //Carro carro1 = new Carro();
+        //carro1.Marca = "Ferrari";
+        //carro1.Modelo = "488";
+        //carro1.Velocidade = 80;
 
-        carro1.Acelerar();
-        carro1.Acelerar();
-        carro1.Acelerar();
-        carro1.Desacelerar();
-        Console.WriteLine("===================================================");
-        Console.WriteLine();
+        //carro1.Acelerar();
+        //carro1.Acelerar();
+        //carro1.Acelerar();
+        //carro1.Desacelerar();
+        //Console.WriteLine("===================================================");
+        //Console.WriteLine();
 
 
-        // Exercício 
-        Pessoa pessoa1 = new Pessoa();
-        pessoa1.Nome = "Mauro";
-        pessoa1.Idade = 32;
+        //// Exercício 
+        //Pessoa pessoa1 = new Pessoa();
+        //pessoa1.Nome = "Mauro";
+        //pessoa1.Idade = 32;
 
-        pessoa1.InfoIdade();
-        pessoa1.Envelhecer(2);
-        Console.WriteLine("===================================================");
+        //pessoa1.InfoIdade();
+        //pessoa1.Envelhecer(2);
+        //Console.WriteLine("===================================================");
 
-        Pessoa pessoa2 = new Pessoa();
-        pessoa2.Nome = "Anitta";
-        pessoa2.Idade = 58;
+        //Pessoa pessoa2 = new Pessoa();
+        //pessoa2.Nome = "Anitta";
+        //pessoa2.Idade = 58;
 
-        pessoa2.InfoIdade();
-        pessoa2.Envelhecer(4);
-        Console.WriteLine("===================================================");
+        //pessoa2.InfoIdade();
+        //pessoa2.Envelhecer(4);
+        //Console.WriteLine("===================================================");
 
-        Pessoa pessoa3 = new Pessoa();
-        pessoa3.Nome = "Nick";
-        pessoa3.Idade = 41;
+        //Pessoa pessoa3 = new Pessoa();
+        //pessoa3.Nome = "Nick";
+        //pessoa3.Idade = 41;
 
-        pessoa3.InfoIdade();
-        pessoa3.Envelhecer(5);
-        Console.WriteLine("===================================================");
-        Console.WriteLine();
+        //pessoa3.InfoIdade();
+        //pessoa3.Envelhecer(5);
+        //Console.WriteLine("===================================================");
+        //Console.WriteLine();
 
-        Funcionario f1 = new Funcionario();
-        f1.Nome = "Luis Santos";
-        f1.Idade = 20;
-        f1.Cargo = "Aprendiz";
-        f1.Salario = 1400.00;
+        //Funcionario f1 = new Funcionario();
+        //f1.Nome = "Luis Santos";
+        //f1.Idade = 20;
+        //f1.Cargo = "Aprendiz";
+        //f1.Salario = 1400.00;
 
-        f1.ApresentarSe();
-        Console.WriteLine();
+        //f1.ApresentarSe();
+        //Console.WriteLine();
 
-        Console.WriteLine("===================================================");
-        Console.WriteLine("~                                                 ~");
-        Console.WriteLine("===================================================");
+        //Console.WriteLine("===================================================");
+        //Console.WriteLine("~                                                 ~");
+        //Console.WriteLine("===================================================");
 
         ////Instanciar um Objeto
         //Animal animal1 = new Animal();
@@ -162,28 +162,48 @@ internal class Program
         ////Imprimindo a informação na tela
         //Console.WriteLine("O Animal " + animal1.Especie + " emitiu um som");
 
-        Gato gato1 = new Gato();
-        gato1.Nome = "Frajola";
+        //Gato gato1 = new Gato();
+        //gato1.Nome = "Frajola";
 
-        Console.WriteLine(gato1.Nome);
-        gato1.emitirSom();
-        Console.WriteLine();
+        //Console.WriteLine(gato1.Nome);
+        //gato1.emitirSom();
+        //Console.WriteLine();
 
-        Porco Porco1 = new Porco();
-        Porco1.Nome = "Gaguinho";
+        //Porco Porco1 = new Porco();
+        //Porco1.Nome = "Gaguinho";
 
-        Console.WriteLine(Porco1.Nome);
-        Porco1.emitirSom();
-        Console.WriteLine();
+        //Console.WriteLine(Porco1.Nome);
+        //Porco1.emitirSom();
+        //Console.WriteLine();
 
-        Galinha galinha1 = new Galinha();
-        galinha1.Nome = "Galinha";
+        //Galinha galinha1 = new Galinha();
+        //galinha1.Nome = "Galinha";
 
-        Console.WriteLine(galinha1.Nome);
-        galinha1.emitirSom();
-        Console.WriteLine();
+        //Console.WriteLine(galinha1.Nome);
+        //galinha1.emitirSom();
+        //Console.WriteLine();
 
+        Mago mago1 = new Mago();
+        mago1.Nome = "Grande Mago";
+        mago1.Nivel = 45;
+        mago1.Forca = 47;
+        mago1.Inteligencia = 76;
+        mago1.Vida = 30;
+        mago1.Agilidade = 53;
+        mago1.apresentarSe();
+        Console.WriteLine("==============================");
 
+        Elfo elfo1 = new Elfo();
+        elfo1.Nome = "Elfanderson";
+        elfo1.Nivel = 40;
+        elfo1.Forca = 67;
+        elfo1.Inteligencia = 60;
+        elfo1.Vida = 35;
+        elfo1.Agilidade = 95;
+        elfo1.apresentarSe();
+        Console.WriteLine("==============================");
+
+        elfo1.batalhar(mago1);
 
 
 
