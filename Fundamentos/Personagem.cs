@@ -19,7 +19,12 @@ namespace Fundamentos
         public virtual void apresentarSe() { }
         public virtual void evoluir()
         {
-            this.Nivel += 1;
+            this.Nivel += 2;
+            this.Forca *= 2;
+            this.Agilidade *= 2;
+            this.Inteligencia *= 2;
+            this.Vida *= 2;
+            Console.WriteLine("O Jogador " + this.Nivel + " evoluiu para o nível " + this.Nivel + ". Seus novos atributos são: \nAgilidade: " + this.Agilidade + "\nInteligência: " + this.Inteligencia + "\nForça: " + this.Forca);
         }
         public virtual int atacar()
         {
@@ -65,12 +70,14 @@ namespace Fundamentos
                 {
                     Console.WriteLine("O Personagem " + p.Nome + " Venceu!");
                     vencedor = true;
+                    p.evoluir();
                 }
 
                 if (p.Vida <= 0)
                 {
                     Console.WriteLine("O Personagem " + this.Nome + " Venceu!");
                     vencedor = true;
+                    this.evoluir();
                 }
             }
 

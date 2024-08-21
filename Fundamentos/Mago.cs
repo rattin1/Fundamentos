@@ -14,15 +14,3 @@ namespace Fundamentos
         }
     }
 }
-
-//        public override void batalha()
-//        {
-
-//        }
-
-//        public override void evoluir()
-//        {
-
-//        }
-//    }
-//}
